@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A479E0B25E2FCA3005C3151 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A479E0A25E2FCA3005C3151 /* main.cpp */; };
+		5A479E1525E2FCE6005C3151 /* Book.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A479E1325E2FCE6005C3151 /* Book.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		5A479E0725E2FCA3005C3151 /* CF.BookReport00 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CF.BookReport00; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A479E0A25E2FCA3005C3151 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5A479E1325E2FCE6005C3151 /* Book.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Book.cpp; sourceTree = "<group>"; };
+		5A479E1425E2FCE6005C3151 /* Book.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Book.hpp; sourceTree = "<group>"; };
+		5A479E1725E2FD03005C3151 /* Author.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Author.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				5A479E0A25E2FCA3005C3151 /* main.cpp */,
+				5A479E1725E2FD03005C3151 /* Author.hpp */,
+				5A479E1325E2FCE6005C3151 /* Book.cpp */,
+				5A479E1425E2FCE6005C3151 /* Book.hpp */,
 			);
 			path = CF.BookReport00;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A479E1525E2FCE6005C3151 /* Book.cpp in Sources */,
 				5A479E0B25E2FCA3005C3151 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,9 +247,11 @@
 		5A479E0F25E2FCA3005C3151 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++2a";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD3NHZ5324;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -249,9 +259,11 @@
 		5A479E1025E2FCA3005C3151 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++2a";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD3NHZ5324;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu18;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
